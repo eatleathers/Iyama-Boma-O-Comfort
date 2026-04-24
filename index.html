@@ -110,15 +110,13 @@
 
         .profile-img {
             width: 380px;
-            height: 380px;
-            border-radius: 50%;
+            height: 460px;		/* taller = more head-to-chest visible */
+            border-radius: 40%;		/* less round = more face/chest showing */
             object-fit: cover;
-            object-position: top;
+            object-position: center 10%;	/* nudge down slightly */
             border: 8px solid var(--white);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            background-color: var(--light-cream);
-            /* This ensures space between head and top of circle */
-            padding: 15px; 
+            padding: 0; 
         }
 
         .hero-content h1 {
